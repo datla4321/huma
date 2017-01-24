@@ -1,35 +1,35 @@
-<!doctype html>
+<!Doctype html>
 <html>
-  <head>
+<head>
     <title>AppMaa</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-    <!-- Main stylesheet-->
-
-    <link rel="stylesheet" href="build/app.css" />
+<!-- Main stylesheet-->
+<link rel="stylesheet"  href="style.css" />
+<link rel="stylesheet" href="build/app.css" />
     <!--/ Mobile Viewport Scale /-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name='robots' content='noindex,follow' />
+</head>
+<body>
 
-  </head>
-  <body>
-    <!-- LOGIN DIALOG-->
-    <dialog id="loginDialog" class="mdl-dialog">
-      <h4 class="mdl-dialog__title" align="middle">Sign In</h4>
+<!-- LOGIN DIALOG-->
+<dialog id="loginDialog" class="mdl-dialog">
+    <h4 class="mdl-dialog__title" align="middle">Sign In</h4>
     
     <div class="mdl-dialog__content">
-	      <p align="middle" id="loginError"></p>
-	      <p>
+	<p align="middle" id="loginError"></p>
+	<p>
         <center><img src="Vault.png" alt="Smiley face" height="100" width="100"></center>
-        </p>
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" id="loginEmail">
-          <label class="mdl-textfield__label" for="sample3">Email...</label>
-        </div>
+      </p>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+         <input class="mdl-textfield__input" type="text" id="loginEmail">
+         <label class="mdl-textfield__label" for="sample3">Email...</label>
+      </div>
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
          <input class="mdl-textfield__input" type="password" id="loginPassword">
          <label class="mdl-textfield__label" for="sample3">Password...</label>
@@ -37,33 +37,33 @@
       
     </div>
     <div class="mdl-dialog__actions">
-	    <button id="signUpBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+	  <button id="signUpBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
        SIGN UP
       </button>
-    <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+     <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
       <button id="loginBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
         SIGN IN
        </button>
     <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
-  </div>
+    </div>
 	<div class="mdl-dialog__actions">
       <button id="lostPwd" class="mdl-button mdl-js-button">
          Lost Password
       </button>
       <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
-  </div>
+    </div>
   </dialog>
 
 
-  <div class="login-cover">
+<div class="login-cover">
 
   <!-- MDL Spinner Component -->
-  <div class="page-loader mdl-spinner mdl-js-spinner is-active"></div>
-  </div>
+<div class="page-loader mdl-spinner mdl-js-spinner is-active"></div>
+</div>
 
-  <!-- Main Page Container-->
-  <div id="container">
-  <!--/ Start Left /-->
+<!-- Main Page Container-->
+<div id="container">
+<!--/ Start Left /-->
 	<div class="main-nav">
 		
 		<!--/ Start Mini Bar /-->
@@ -76,8 +76,7 @@
 						<li title="My tasks" class="no-hover">
 				<a href="#" class="task-count"><span>0</span></a>
 			</li>
-			<li title="Dashboard"><a href="#" class="dashboard">Home</a></li> 
-           <!--<li title="Dashboard"><a id="app" class="dashboard">Home</a></li>-->
+			<li title="Dashboard"><a href="#" class="dashboard">Home</a></li>
 	        <li title="Start a new project"><a href="#" class="new-project">New Project</a></li>
 	        <li title="Create a new task"><a href="#" class="new-task">New Task</a></li>
 			<li title="Other Reports"><a class="pages">Pages</a></li>
@@ -86,15 +85,21 @@
 		    <li title="Go to admin"><a href="#" class="go-to-admin">Admin</a></li>
 			<li title="Logout"><a id="signOutBtn" class="logout">Logout</a></li>
 
+
 		</ul>
 		<!--/ End Mini Bar /-->
 
     </div>
-    <div class="content my-tasks">
+    <div class="page-new-task">
         <div class="container">
              <div  id="main"></div>
 </div>
+
 </div>
+
+
+</div>
+
 
 <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
 <script>
@@ -108,13 +113,11 @@
   };
   firebase.initializeApp(config);
 </script>
-        <!--<script type="text/javascript" src="build/bundle.js"></script>-->
-<script src="./index.js"></script>
+<script src="build/app.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="index.js"></script>
 
-<script src="build/app.js"></script>
-  
-  
-  </body>
+</body>
 </html>
+
